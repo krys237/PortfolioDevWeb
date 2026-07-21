@@ -26,7 +26,7 @@ const greeting = {
     "Développeur Web Full Stack avec de l'expérience dans la création d'applications web robustes et scalables : interfaces modernes avec React.js / Next.js côté frontend, APIs et services avec Java EE / Spring Boot côté backend, et gestion de bases de données relationnelles et NoSQL (MySQL, PostgreSQL, MongoDB)."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1J9Fva5MCTtwRuxMAZZFSv_WZY9CbowxZ/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1AzpJoJMd8qfheaSLRbcpmYelsxE1Q9gB/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
