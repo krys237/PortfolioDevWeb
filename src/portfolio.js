@@ -37,7 +37,6 @@ const socialMediaLinks = {
   linkedin: "https://www.linkedin.com/in/christian-gambou-84b632232/",
   gmail: "christiangambou17@gmail.com",
   // Une chaîne vide masque l'icône (voir src/components/socialMedia)
-  gitlab: "",
   facebook: "",
   //medium: "#",
   stackoverflow: "",
@@ -292,17 +291,40 @@ const bigProjects = {
       projectName: "e-Dr TIM — Téléconsultation",
       projectDesc:
         "Plateforme de téléconsultation médicale (CEMAC / RGPD) : consultations immédiates avec file d'attente, rendez-vous programmés, visioconférence LiveKit / Jitsi, KYC médecin et 2FA. Backend Django/DRF (80+ endpoints, 186 tests), back-office Next.js / TypeScript, tâches Celery et WebSocket.",
-      // TODO: renseigner l'URL publique de la plateforme de téléconsultation
-      footerLink: null
+      footerLink: [
+        {
+          name: "Voir le service",
+          url: "https://edoctor-tim.com/services-dmiDP.html"
+        }
+      ]
     },
     {
       image: require("./assets/images/logoPharmacy.jpeg"),
       projectName: "e-doctorPharma — Marketplace & ERP d'officine",
       projectDesc:
         "Marketplace e-santé (commande de médicaments et livraison) intégrant un ERP de pharmacie complet qui fonctionne hors-ligne au comptoir : synchronisation event-sourced, point de vente et caisse, gestion de stock par lots, comptabilité OHADA, facturation PDF et RBAC par officine.",
-      // TODO: renseigner l'URL publique de la marketplace / du back-office
-      footerLink: null
+      footerLink: [
+        {
+          name: "Site vitrine",
+          url: "https://website-edrpharma-mobile.vercel.app/"
+        }
+      ]
     },
+    /* Projet FastAPI — a decommenter des que le site sera en ligne
+       (mise en ligne annoncee pour la semaine du 12 octobre 2026)
+    {
+      image: require("./assets/images/programmer.svg"),
+      projectName: "A COMPLETER — projet FastAPI",
+      projectDesc:
+        "A COMPLETER : description du projet. API Python / FastAPI.",
+      footerLink: [
+        {
+          name: "Voir le projet",
+          url: "A COMPLETER"
+        }
+      ]
+    },
+    */
     {
       image: require("./assets/images/logo-tontinex.png"),
       projectName: "TontineX360",
@@ -428,25 +450,11 @@ const talkSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
 // Resume Section
 const resumeSection = {
   title: "Resume",
   subtitle: "N'hésitez pas à télécharger mon CV",
 
-  // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -481,7 +489,6 @@ export {
   achievementSection,
   blogSection,
   talkSection,
-  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
