@@ -387,24 +387,46 @@ const achievementSection = {
       subtitle:
         "Backend Django REST Framework de 8 applications : 80+ endpoints couverts par 186 tests automatisés, visioconférence multi-fournisseurs (LiveKit / Jitsi), conformité RGPD et réglementation CEMAC.",
       image: require("./assets/images/logo-edoctor.webp"),
-      imageAlt: "e-Dr TIM"
+      imageAlt: "e-Dr TIM",
+      footerLink: [
+        {
+          name: "Voir le service",
+          url: "https://edoctor-tim.com/services-dmiDP.html"
+        }
+      ]
     },
     {
       title: "ERP d'officine offline-first",
       subtitle:
         "Synchronisation hors-ligne event-sourced (résolution de conflits Last Write Wins), numérotation fiscale par blocs pré-alloués, comptabilité OHADA et dashboard KPI — 11 applications Django avec pipeline CI (pytest, flake8, black).",
       image: require("./assets/images/logoPharmacy.jpeg"),
-      imageAlt: "e-doctorPharma"
+      imageAlt: "e-doctorPharma",
+      footerLink: [
+        {
+          name: "Site vitrine",
+          url: "https://website-edrpharma-mobile.vercel.app/"
+        }
+      ]
     },
     {
       title: "SaaS multi-tenant",
       subtitle:
         "Architecture multi-tenant en base partagée (isolation automatique par association via middleware et managers dédiés), 16 applications Django, wallets, chat WebSocket et notifications push.",
       image: require("./assets/images/logo-tontinex.png"),
-      imageAlt: "TontineX360"
+      imageAlt: "TontineX360",
+      footerLink: [
+        {
+          name: "Site vitrine",
+          url: "https://tontinex360.com/"
+        },
+        {
+          name: "Application",
+          url: "https://app.tontinex360.com/"
+        }
+      ]
     }
   ],
-  display: false // Passer à true pour afficher cette section
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
