@@ -215,8 +215,8 @@ const workExperiences = {
       role: "Développeur Full Stack",
       company: "DECODE",
       companylogo: require("./assets/images/LogoDecode.JPG"),
-      date: "2024 - 2025",
-      desc: "J'ai travaillé pendant une année à DECODE en tant que développeur Full Stack pour leur application de gestion des étudiants en stage et L'application mobile de Suivi de données médicales.",
+      date: "Juin 2023 – Mars 2025",
+      desc: "Entré à DECODE pour un stage professionnel de six mois, puis recruté comme développeur Full Stack sur leur application de gestion des étudiants en stage et leur application mobile de suivi de données médicales.",
       descBullets: [
         "Création d'une application de bureau en Python (Tkinter, SQLite) pour la gestion des étudiants en stage dans l'entreprise.",
         "Développement d'une application mobile de suivi de données médicales."
@@ -226,7 +226,7 @@ const workExperiences = {
       role: "Développeur Full Stack (Python / JavaScript)",
       company: "e-Dr TIM",
       companylogo: require("./assets/images/logo-edoctor.webp"),
-      date: "2025 – 2026",
+      date: "Juillet 2025 – Août 2026",
       desc: "Développement web de la plateforme de santé digitale e-Dr TIM : APIs Django REST Framework pour les produits métier (dossier médical, téléconsultation, ERP d'officine) et back-offices React / Next.js qui les consomment.",
       descBullets: [
         "DMI patient : API Django/DRF du dossier médical informatisé (comptes, cliniques, suivi d'indicateurs de santé), documentée sous Swagger.",
@@ -484,7 +484,7 @@ const contactInfo = {
   title: emoji("Contactez-moi ☎️"),
   subtitle:
     "Je suis disponible pour discuter de votre projet ou simplement pour dire bonjour. Mon boîte de réception est ouverte pour tous.",
-  number: "+237 658 207 936",
+  number: "+237 658 207 931",
   email_address: "christiangambou17@gmail.com"
 };
 
