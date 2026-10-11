@@ -377,7 +377,7 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Focus technique 🏆 "),
+  title: "Focus technique",
   subtitle:
     "Quelques points forts techniques des plateformes sur lesquelles j'ai travaillé",
 
