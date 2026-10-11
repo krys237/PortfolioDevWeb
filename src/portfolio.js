@@ -23,7 +23,7 @@ const greeting = {
   username: "Christian GAMBOU",
   title: "Hello world, C'est Christian !",
   subTitle: emoji(
-    "Développeur Web Full Stack avec de l'expérience dans la création d'applications web robustes et scalables : interfaces modernes avec React.js / Next.js côté frontend, APIs et services avec Java EE / Spring Boot côté backend, et gestion de bases de données relationnelles et NoSQL (MySQL, PostgreSQL, MongoDB)."
+    "Développeur Web Full Stack : je conçois des APIs REST robustes et scalables en Python / Django / Django REST Framework (temps réel WebSocket, traitement asynchrone Celery & Redis, PostgreSQL) et des interfaces modernes en React.js / Next.js / TypeScript. Mes projets couvrent l'e-santé, la fintech et les ERP métier."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1AzpJoJMd8qfheaSLRbcpmYelsxE1Q9gB/view?usp=sharing", // Set to empty to hide the button
@@ -34,12 +34,13 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/krys237",
-  linkedin: "#https://www.linkedin.com/in/christian-gambou-84b632232/",
-  gmail: "#christiangambou17@gmail.com",
-  gitlab: "christian.gambou@edoctor-tim.com",
-  facebook: "#",
+  linkedin: "https://www.linkedin.com/in/christian-gambou-84b632232/",
+  gmail: "christiangambou17@gmail.com",
+  // Une chaîne vide masque l'icône (voir src/components/socialMedia)
+  gitlab: "",
+  facebook: "",
   //medium: "#",
-  stackoverflow: "#",
+  stackoverflow: "",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,33 +50,48 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Qu'est ce que je fais ? 🛠  ️",
-  subTitle: "DÉVELOPPEUR WEB FULL STACK PASSIONNÉ PAR LA CRÉATION DE SOLUTIONS ROBUSTES ET SCALABLES :)",
+  subTitle:
+    "DÉVELOPPEUR FULL STACK — FRONTEND JAVASCRIPT / TYPESCRIPT, BACKEND PYTHON :)",
   skills: [
     emoji(
-      "⚡ Développement d'interfaces utilisateur modernes et réactives avec React.js / Next.js"
+      "⚡ Conception d'APIs REST sécurisées et documentées avec Django REST Framework (JWT, OAuth2, 2FA, RBAC, Swagger / OpenAPI)"
     ),
     emoji(
-      "⚡ Conception et développement d'APIs REST robustes avec Java EE et Spring Boot"
+      "⚡ Développement d'interfaces utilisateur modernes et réactives avec React.js / Next.js / TypeScript"
     ),
     emoji(
-      "⚡ Modélisation et gestion de bases de données relationnelles (MySQL, PostgreSQL) et NoSQL (MongoDB)"
+      "⚡ Temps réel et traitement asynchrone : Django Channels / WebSocket, Celery, Redis"
     ),
     emoji(
-      "⚡ Intégration continue, gestion de version et suivi de projet avec Git, Jenkins, Maven et Jira"
+      "⚡ Modélisation de bases de données (PostgreSQL, MySQL, MongoDB), conteneurisation Docker et intégration continue avec Git"
     )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
+https://fontawesome.com/icons?d=gallery
+Les icônes Devicon (devicon-*) proviennent de la feuille de style ajoutée dans
+public/index.html — nécessaire pour Django, FastAPI, PyCharm, PostgreSQL... */
 
   softwareSkills: [
     {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
+    {
+      skillName: "Django / DRF",
+      fontAwesomeClassname: "devicon-django-plain"
+    },
+    {
+      skillName: "FastAPI",
+      fontAwesomeClassname: "devicon-fastapi-plain"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "TypeScript",
+      fontAwesomeClassname: "devicon-typescript-plain"
     },
     {
       skillName: "React / Next.js",
@@ -94,12 +110,24 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "SQL / MySQL / PostgreSQL",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "PostgreSQL / MySQL",
+      fontAwesomeClassname: "devicon-postgresql-plain"
     },
     {
       skillName: "MongoDB",
       fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Celery",
+      fontAwesomeClassname: "fas fa-cogs"
+    },
+    {
+      skillName: "Redis",
+      fontAwesomeClassname: "devicon-redis-plain"
+    },
+    {
+      skillName: "Docker",
+      fontAwesomeClassname: "fab fa-docker"
     },
     {
       skillName: "Git",
@@ -110,16 +138,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "Jira",
-      fontAwesomeClassname: "fab fa-jira"
-    },
-    {
-      skillName: "Jenkins",
-      fontAwesomeClassname: "fab fa-jenkins"
-    },
-    {
-      skillName: "Docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "PyCharm",
+      fontAwesomeClassname: "devicon-pycharm-plain"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -148,14 +168,15 @@ const educationInfo = {
       subHeader: "Diplôme de Technicien Supérieur - DTS",
       duration: "Octobre 2022 - Octobre 2024",
       desc: "Le Diplôme de Technicien Supérieur (DTS) en génie logiciel est un parcours concret qui allie théorie scientifique et maîtrise technique. Elle forme des professionnels capables de concevoir des logiciels, d'administrer des réseaux et de gérer des données, tout en mettant l'accent sur la pratique en entreprise et la résolution de problèmes technologiques actuels.",
-      descBullets: ["Journal de santé",
-         "Langages de programmation Et Intelligence Artificielle",
-         "Programmation mobile et web",
-         "Gestion de base de données",
-         "Systèmes d'exploitation (OS) et Architecture des ordinateurs",
-         "Gestion de projet et gestion de la qualité",
-         "Gestion de la sécurité informatique",
-         "Gestion de la conformité réglementaire",
+      descBullets: [
+        "Journal de santé",
+        "Langages de programmation Et Intelligence Artificielle",
+        "Programmation mobile et web",
+        "Gestion de base de données",
+        "Systèmes d'exploitation (OS) et Architecture des ordinateurs",
+        "Gestion de projet et gestion de la qualité",
+        "Gestion de la sécurité informatique",
+        "Gestion de la conformité réglementaire"
       ]
     }
   ]
@@ -167,16 +188,20 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "65%" //Insert relative in percentage
+      Stack: "Backend Python (Django / DRF)", //Insert stack or technology you have experience in
+      progressPercentage: "85%" //Insert relative in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Frontend (React / Next.js / TypeScript)",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "Bases de données & modélisation",
       progressPercentage: "75%"
     },
     {
-      Stack: "Base de données",
-      progressPercentage: "70%"
+      Stack: "DevOps (Docker, CI/CD)",
+      progressPercentage: "60%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -194,19 +219,22 @@ const workExperiences = {
       date: "2024 - 2025",
       desc: "J'ai travaillé pendant une année à DECODE en tant que développeur Full Stack pour leur application de gestion des étudiants en stage et L'application mobile de Suivi de données médicales.",
       descBullets: [
-        "Création d’une application de bureau avec python, sqlite et tKinter pour la gestion des étudiants en stage dans l’entreprise.",
-        "Développement d’une application mobile ade Suivi de données médicales."
+        "Création d'une application de bureau en Python (Tkinter, SQLite) pour la gestion des étudiants en stage dans l'entreprise.",
+        "Développement d'une application mobile de suivi de données médicales."
       ]
     },
     {
-      role: "Développeur Full Stack",
+      role: "Développeur Full Stack (Python / JavaScript)",
       company: "e-Dr TIM",
       companylogo: require("./assets/images/logo-edoctor.webp"),
       date: "2025 – 2026",
-      desc: "Développeur Full Stack pour l'entreprise e-Dr TIM, en charge du développement web et mobile de la plateforme de santé digitale.",
+      desc: "Développement web de la plateforme de santé digitale e-Dr TIM : APIs Django REST Framework pour les produits métier (dossier médical, téléconsultation, ERP d'officine) et back-offices React / Next.js qui les consomment.",
       descBullets: [
-        "e-Dr TIM DMI : dossier médical informatisé, plateforme web (edoctor-tim.com) de gestion des dossiers patients.",
-        "6 Connect : application de prise de paramètres de 6 facteurs de risque pour la prédiction de maladies."
+        "DMI patient : API Django/DRF du dossier médical informatisé (comptes, cliniques, suivi d'indicateurs de santé), documentée sous Swagger.",
+        "Téléconsultation : file d'attente walk-in et rendez-vous programmés, visioconférence (LiveKit / Jitsi), KYC médecin, 2FA TOTP, conformité RGPD / CEMAC.",
+        "e-doctorPharma : ERP d'officine fonctionnant hors-ligne avec synchronisation cloud, point de vente, comptabilité OHADA et facturation PDF.",
+        "Back-office d'administration en Next.js 15 / React 19 / TypeScript (TanStack Query, Tailwind CSS).",
+        "Stack transverse : PostgreSQL, Celery & Redis, Django Channels (WebSocket), Docker Compose, Firebase Cloud Messaging."
       ]
     },
     {
@@ -216,11 +244,11 @@ const workExperiences = {
       date: "2024 – 2026",
       desc: "Conception et développement de plateformes web complètes (frontend, backend, base de données) pour divers clients, en parallèle de mes activités salariées.",
       descBullets: [
-        "Sky Track : application web de suivi et de gestion développée en Full Stack.",
+        "TontineX360 : plateforme SaaS multi-tenant de gestion de tontines et d'associations (backend Django/DRF, wallets, chat temps réel, notifications push).",
         "GuardianTrack360 : solution de géolocalisation et de suivi en temps réel (site vitrine + application web).",
-        "TontineX360 : plateforme de gestion de tontines en ligne (site vitrine + application web)."
+        "Sky Track : application web de suivi et de gestion développée en Full Stack."
       ]
-    },
+    }
     /*
     {
       role: "Software Engineer Intern",
@@ -243,13 +271,15 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Project",
-  subtitle: "QUELQUES PROJETS WEB FULL STACK SUR LESQUELS J'AI TRAVAILLÉ",
+  title: "Projets",
+  subtitle:
+    "QUELQUES PROJETS FULL STACK — FRONTEND JAVASCRIPT / TYPESCRIPT, BACKEND PYTHON (DJANGO / DRF)",
   projects: [
     {
       image: require("./assets/images/logo-edoctor.webp"),
-      projectName: "e-Dr TIM",
-      projectDesc: "Plateforme de santé digitale : dossier médical informatisé et suivi de données médicales.",
+      projectName: "e-Dr TIM — DMI patient",
+      projectDesc:
+        "Dossier médical informatisé : API Django REST Framework (comptes, cliniques, suivi d'indicateurs de santé) documentée sous Swagger, et plateforme web de gestion des dossiers patients.",
       footerLink: [
         {
           name: "Site vitrine",
@@ -258,20 +288,42 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/logo-skytrack.png"),
-      projectName: "Sky Track",
-      projectDesc: "Application web de suivi et de gestion développée en Full Stack.",
+      image: require("./assets/images/logo-edoctor.webp"),
+      projectName: "e-Dr TIM — Téléconsultation",
+      projectDesc:
+        "Plateforme de téléconsultation médicale (CEMAC / RGPD) : consultations immédiates avec file d'attente, rendez-vous programmés, visioconférence LiveKit / Jitsi, KYC médecin et 2FA. Backend Django/DRF (80+ endpoints, 186 tests), back-office Next.js / TypeScript, tâches Celery et WebSocket.",
+      // TODO: renseigner l'URL publique de la plateforme de téléconsultation
+      footerLink: null
+    },
+    {
+      image: require("./assets/images/logoPharmacy.jpeg"),
+      projectName: "e-doctorPharma — Marketplace & ERP d'officine",
+      projectDesc:
+        "Marketplace e-santé (commande de médicaments et livraison) intégrant un ERP de pharmacie complet qui fonctionne hors-ligne au comptoir : synchronisation event-sourced, point de vente et caisse, gestion de stock par lots, comptabilité OHADA, facturation PDF et RBAC par officine.",
+      // TODO: renseigner l'URL publique de la marketplace / du back-office
+      footerLink: null
+    },
+    {
+      image: require("./assets/images/logo-tontinex.png"),
+      projectName: "TontineX360",
+      projectDesc:
+        "Plateforme SaaS multi-tenant de gestion de tontines et d'associations : souscriptions, cycles, finance, gouvernance, sanctions, wallets, chat temps réel et notifications push. Backend Django/DRF avec isolation des données par association.",
       footerLink: [
         {
-          name: "Voir l'application",
-          url: "https://sky-track-puce.vercel.app/"
+          name: "Site vitrine",
+          url: "https://tontinex360.com/"
+        },
+        {
+          name: "Application",
+          url: "https://app.tontinex360.com/"
         }
       ]
     },
     {
       image: require("./assets/images/logo-guardian.png"),
       projectName: "GuardianTrack360",
-      projectDesc: "Solution de géolocalisation et de suivi en temps réel, avec site vitrine et application web.",
+      projectDesc:
+        "Solution de géolocalisation et de suivi en temps réel, avec site vitrine et application web.",
       footerLink: [
         {
           name: "Site vitrine",
@@ -284,17 +336,14 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/logo-tontinex.png"),
-      projectName: "TontineX360",
-      projectDesc: "Plateforme de gestion de tontines en ligne, avec site vitrine et application web.",
+      image: require("./assets/images/logo-skytrack.png"),
+      projectName: "Sky Track",
+      projectDesc:
+        "Application web de suivi et de gestion développée en Full Stack.",
       footerLink: [
         {
-          name: "Site vitrine",
-          url: "https://tontinex360.com/"
-        },
-        {
-          name: "Application",
-          url: "https://app.tontinex360.com/"
+          name: "Voir l'application",
+          url: "https://sky-track-puce.vercel.app/"
         }
       ]
     }
@@ -306,61 +355,34 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Focus technique 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Quelques points forts techniques des plateformes sur lesquelles j'ai travaillé",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "API de téléconsultation à grande échelle",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "Backend Django REST Framework de 8 applications : 80+ endpoints couverts par 186 tests automatisés, visioconférence multi-fournisseurs (LiveKit / Jitsi), conformité RGPD et réglementation CEMAC.",
+      image: require("./assets/images/logo-edoctor.webp"),
+      imageAlt: "e-Dr TIM"
     },
     {
-      title: "Google Assistant Action",
+      title: "ERP d'officine offline-first",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "Synchronisation hors-ligne event-sourced (résolution de conflits Last Write Wins), numérotation fiscale par blocs pré-alloués, comptabilité OHADA et dashboard KPI — 11 applications Django avec pipeline CI (pytest, flake8, black).",
+      image: require("./assets/images/logoPharmacy.jpeg"),
+      imageAlt: "e-doctorPharma"
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      title: "SaaS multi-tenant",
+      subtitle:
+        "Architecture multi-tenant en base partagée (isolation automatique par association via middleware et managers dédiés), 16 applications Django, wallets, chat WebSocket et notifications push.",
+      image: require("./assets/images/logo-tontinex.png"),
+      imageAlt: "TontineX360"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: false // Passer à true pour afficher cette section
 };
 
 // Blogs Section
@@ -416,7 +438,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
