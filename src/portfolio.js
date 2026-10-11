@@ -287,7 +287,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/logo-edoctor.webp"),
+      image: require("./assets/images/logo-edoctor-dp.png"),
       projectName: "e-Dr TIM — Téléconsultation",
       projectDesc:
         "Plateforme de téléconsultation médicale (CEMAC / RGPD) : consultations immédiates avec file d'attente, rendez-vous programmés, visioconférence LiveKit / Jitsi, KYC médecin et 2FA. Backend Django/DRF (80+ endpoints, 186 tests), back-office Next.js / TypeScript, tâches Celery et WebSocket.",
@@ -386,8 +386,8 @@ const achievementSection = {
       title: "API de téléconsultation à grande échelle",
       subtitle:
         "Backend Django REST Framework de 8 applications : 80+ endpoints couverts par 186 tests automatisés, visioconférence multi-fournisseurs (LiveKit / Jitsi), conformité RGPD et réglementation CEMAC.",
-      image: require("./assets/images/logo-edoctor.webp"),
-      imageAlt: "e-Dr TIM",
+      image: require("./assets/images/logo-edoctor-dp.png"),
+      imageAlt: "e-Dr TIM — DMI D/P",
       footerLink: [
         {
           name: "Voir le service",
