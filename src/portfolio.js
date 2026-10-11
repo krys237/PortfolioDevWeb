@@ -26,7 +26,7 @@ const greeting = {
     "Développeur Web Full Stack : je conçois des APIs REST robustes et scalables en Python / Django / Django REST Framework (temps réel WebSocket, traitement asynchrone Celery & Redis, PostgreSQL) et des interfaces modernes en React.js / Next.js / TypeScript. Mes projets couvrent l'e-santé, la fintech et les ERP métier."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1AzpJoJMd8qfheaSLRbcpmYelsxE1Q9gB/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1pLZoUSH8c5zbLAjjeqxb7AcdGOZjUqZs/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
